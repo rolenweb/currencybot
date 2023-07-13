@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/currencybot
+    username: user
+    password: password
+  flyway:
+    enabled: true
+  codec:
+    max-in-memory-size: 20MB
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: TRACE
+
